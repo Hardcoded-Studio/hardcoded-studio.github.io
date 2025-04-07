@@ -1,7 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardcoded Studio - Indie Game Development</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+        .about-section {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .games-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .game-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .game-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .play-button {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .play-button:hover {
+            background-color: #27ae60;
+            text-decoration: none;
+        }
+        .contact-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-<h1>Hardcoded Studio</h1>
-<p>We are the indie game developers</p>
+    <header>
+        <div class="container">
+            <h1>Hardcoded Studio</h1>
+            <p class="tagline">Crafting Unique Gaming Experiences</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>About Us</h2>
+            <p>Hardcoded Studio is an independent game development studio dedicated to creating innovative and engaging gaming experiences. We believe in the power of creativity and the importance of player enjoyment in every game we develop.</p>
+            <p>Our team consists of passionate developers, designers, and artists who work together to bring unique gaming concepts to life. We focus on creating games that are not only fun to play but also tell compelling stories and provide memorable experiences.</p>
+        </section>
+
+        <section class="games-section">
+            <div class="game-card">
+                <h3>Super Tic-Tac-Toe</h3>
+                <p>A modern twist on the classic game, featuring enhanced gameplay mechanics and a sleek design.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.hardcoded.uttt" class="play-button" target="_blank">Get it on Google Play</a>
+                <p style="margin-top: 1rem;"><a href="policies/uttt_privacy_policy.html">Privacy Policy</a></p>
+            </div>
+            <!-- Add more game cards as you develop new games -->
+        </section>
+
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Have questions or want to collaborate? We'd love to hear from you!</p>
+            <p>Email: <a href="mailto:contact.hardcoded@gmail.com">contact.hardcoded@gmail.com</a></p>
+        </section>
+    </div>
 </body>
 </html>
